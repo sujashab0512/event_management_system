@@ -3,14 +3,32 @@ const fs = require('fs');
 const path = require('path');
 const logger = require('../config/logger');
 
-exports.createEvent = async (req, res, next) => {
+exports.createEvent = async (req, res) => {
   try {
-    const event = await Event.create({ ...req.body, organizer: req.user.id });
-    logger.info(`Event created: ${event.title}`);
-    res.status(201).json({ success: true, data: event });
+    const { title, description, date, location } = req.body;
+
+    // Allow Organizer and Attendee to create events
+    if (!['Organizer', 'Attendee'].includes(req.user.role)) {
+      return res.status(403).json({ success: false, message: 'Forbidden: Only Organizer or Attendee can create events' });
+    }
+
+    const event = await Event.create({
+      title,
+      description,
+      date,
+      location,
+      organizer: req.user.id
+    });
+
+    logger.info(`Event created by ${req.user.role}: ${req.user.id}`);
+    res.status(201).json({
+      success: true,
+      message: 'Event created successfully',
+      data: event
+    });
   } catch (error) {
-    logger.error('Event creation failed', { error: error.message });
-    next(error);
+    logger.error(`Event creation failed: ${error.message}`);
+    res.status(500).json({ success: false, message: error.message });
   }
 };
 
