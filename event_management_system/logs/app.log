@@ -1,0 +1,33 @@
+{"level":"info","message":"App initialized","timestamp":"2025-11-29T07:18:07.953Z"}
+{"level":"info","message":"Server running on port 3500","timestamp":"2025-11-29T07:18:08.458Z"}
+{"error":"User validation failed: password: Path `password` is required., email: Path `email` is required., name: Path `name` is required.","level":"error","message":"Registration failed","timestamp":"2025-11-29T07:32:57.253Z"}
+{"level":"error","message":"User validation failed: password: Path `password` is required., email: Path `email` is required., name: Path `name` is required.","stack":"ValidationError: User validation failed: password: Path `password` is required., email: Path `email` is required., name: Path `name` is required.\n    at Document.invalidate (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\mongoose\\lib\\document.js:3365:32)\n    at validatePath (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\mongoose\\lib\\document.js:3140:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Promise.all (index 0)\n    at async model.$__validate (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\mongoose\\lib\\document.js:3081:3)\n    at async model.validate (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\mongoose\\lib\\document.js:2663:5)\n    at async model.validateBeforeSave (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\mongoose\\lib\\plugins\\validateBeforeSave.js:34:7)\n    at async Kareem.execPre (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\kareem\\index.js:65:24)\n    at async model.$__save (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\mongoose\\lib\\model.js:609:5)","timestamp":"2025-11-29T07:32:57.256Z"}
+{"level":"info","message":"New user registered: abc@gmail.com","timestamp":"2025-11-29T07:37:25.752Z"}
+{"level":"info","message":"New user registered: disha@gmail.com","timestamp":"2025-11-29T07:41:50.437Z"}
+{"level":"error","message":"Expected double-quoted property name in JSON at position 64 (line 6 column 1)","stack":"SyntaxError: Expected double-quoted property name in JSON at position 64 (line 6 column 1)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\body-parser\\lib\\types\\json.js:74:19)\n    at C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\body-parser\\lib\\read.js:163:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Sujasha\\ProjectTrainer\\event_management_system\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:519:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-11-29T07:42:23.280Z"}
+{"level":"warn","message":"Login failed for email: disha@gmail.com","timestamp":"2025-11-29T07:42:30.025Z"}
+{"level":"warn","message":"Login failed for email: disha@gmail.com","timestamp":"2025-11-29T07:43:01.606Z"}
+{"level":"warn","message":"Login failed for email: disha@gmail.com","timestamp":"2025-11-29T07:44:11.400Z"}
+{"level":"warn","message":"Login failed for email: abc@gmail.com","timestamp":"2025-11-29T07:46:24.455Z"}
+{"level":"warn","message":"Login failed for email: abc@gmail.com","timestamp":"2025-11-29T07:46:29.208Z"}
+{"level":"info","message":"New user registered: john@example.com","timestamp":"2025-11-29T07:53:01.155Z"}
+{"level":"warn","message":"Login failed for email: john@example.com","timestamp":"2025-11-29T07:53:38.266Z"}
+{"level":"info","message":"App initialized","timestamp":"2025-11-29T08:08:12.734Z"}
+{"level":"info","message":"Server running on port 3500","timestamp":"2025-11-29T08:08:15.719Z"}
+{"level":"info","message":"New user registered: kamala@gmail.com.com","timestamp":"2025-11-29T08:08:55.842Z"}
+{"level":"warn","message":"Login failed for email: kamala@gmail.com.com","timestamp":"2025-11-29T08:09:14.593Z"}
+{"level":"warn","message":"Login failed for email: kamala@gmail.com","timestamp":"2025-11-29T08:09:23.697Z"}
+{"level":"warn","message":"Login failed for email: kamala@gmail.com","timestamp":"2025-11-29T08:09:26.712Z"}
+{"level":"info","message":"New user registered: figo@gmail.com","timestamp":"2025-11-29T08:10:07.334Z"}
+{"level":"warn","message":"Login failed for email: figo@gmail.com","timestamp":"2025-11-29T08:10:26.600Z"}
+{"level":"info","message":"App initialized","timestamp":"2025-11-29T08:19:39.039Z"}
+{"level":"info","message":"Server running on port 3500","timestamp":"2025-11-29T08:19:39.541Z"}
+{"level":"info","message":"New user registered: harry@gmail.com","timestamp":"2025-11-29T08:20:03.769Z"}
+{"level":"warn","message":"Login failed for email: harry@gmail.com","timestamp":"2025-11-29T08:22:02.107Z"}
+{"level":"info","message":"App initialized","timestamp":"2025-11-29T08:30:53.756Z"}
+{"level":"info","message":"Server running on port 3500","timestamp":"2025-11-29T08:30:54.328Z"}
+{"level":"info","message":"User registered successfully: harry1@gmail.com","timestamp":"2025-11-29T08:31:06.520Z"}
+{"level":"info","message":"Login successful: harry1@gmail.com","timestamp":"2025-11-29T08:31:25.892Z"}
+{"level":"info","message":"Event created: Tech Conference 2025","timestamp":"2025-11-29T08:32:21.308Z"}
+{"level":"info","message":"User registered successfully: sid1@gmail.com","timestamp":"2025-11-29T08:38:43.960Z"}
+{"level":"info","message":"Login successful: sid1@gmail.com","timestamp":"2025-11-29T08:39:03.723Z"}
