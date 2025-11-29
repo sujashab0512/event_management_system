@@ -15,16 +15,39 @@ exports.createEvent = async (req, res, next) => {
 };
 
 // controllers/eventController.js
-exports.uploadImage = (req, res) => {
-  if (!req.files || !req.files.image) {
-    return res.status(400).send('No image uploaded');
+exports.uploadImage = async (req, res) => {
+  try {
+    const event = await Event.findById(req.params.id);
+    if (!event) {
+      return res.status(404).json({ success: false, message: 'Event not found' });
+    }
+
+    // Save raw binary data from request body
+    const fileName = `event_${Date.now()}.jpg`;
+    const filePath = path.join(__dirname, '../../uploads', fileName);
+
+    const writeStream = fs.createWriteStream(filePath);
+    req.pipe(writeStream);
+
+    writeStream.on('finish', async () => {
+      event.image = fileName;
+      await event.save();
+
+      res.json({
+        success: true,
+        message: 'Event image uploaded successfully',
+        data: {
+          fileName,
+          filePath: `/uploads/${fileName}`,
+          uploadedAt: new Date()
+        }
+      });
+    });
+
+    writeStream.on('error', (err) => {
+      res.status(500).json({ success: false, message: err.message });
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
   }
-
-  const image = req.files.image;
-  const uploadPath = __dirname + '/../uploads/' + image.name;
-
-  image.mv(uploadPath, (err) => {
-    if (err) return res.status(500).send(err);
-    res.send('Image uploaded successfully');
-  });
 };

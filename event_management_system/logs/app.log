@@ -31,3 +31,15 @@
 {"level":"info","message":"Event created: Tech Conference 2025","timestamp":"2025-11-29T08:32:21.308Z"}
 {"level":"info","message":"User registered successfully: sid1@gmail.com","timestamp":"2025-11-29T08:38:43.960Z"}
 {"level":"info","message":"Login successful: sid1@gmail.com","timestamp":"2025-11-29T08:39:03.723Z"}
+{"level":"info","message":"User registered successfully: kiara@gmail.com","timestamp":"2025-11-29T08:59:54.748Z"}
+{"level":"info","message":"Login successful: kiara@gmail.com","timestamp":"2025-11-29T09:00:26.716Z"}
+{"level":"info","message":"Event created: Tech Conference 2025","timestamp":"2025-11-29T09:00:36.469Z"}
+{"level":"info","message":"App initialized","timestamp":"2025-11-29T09:11:12.372Z"}
+{"level":"info","message":"Server running on port 3500","timestamp":"2025-11-29T09:11:12.944Z"}
+{"level":"info","message":"User registered successfully: kiara1@gmail.com","timestamp":"2025-11-29T09:11:33.616Z"}
+{"level":"info","message":"Login successful: kiara1@gmail.com","timestamp":"2025-11-29T09:11:48.650Z"}
+{"level":"info","message":"Event created: Tech Conference 2025 today 29thNov","timestamp":"2025-11-29T09:12:42.165Z"}
+{"level":"info","message":"App initialized","timestamp":"2025-11-29T09:20:42.547Z"}
+{"level":"info","message":"Server running on port 3500","timestamp":"2025-11-29T09:20:43.127Z"}
+{"level":"info","message":"User registered successfully: dev@gmail.com","timestamp":"2025-11-29T09:21:13.189Z"}
+{"level":"info","message":"Login successful: dev@gmail.com","timestamp":"2025-11-29T09:21:38.535Z"}
