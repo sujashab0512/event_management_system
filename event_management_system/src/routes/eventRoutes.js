@@ -1,12 +1,10 @@
 const express = require('express');
-const { createEvent, uploadImage } = require('../controllers/eventController');
+const { createEvent } = require('../controllers/eventController');
 const authMiddleware = require('../middlewares/authMiddleware');
 
 const router = express.Router();
 
-router.post('/', authMiddleware(['Organizer']), createEvent);
-
-// no multer here, just call uploadImage
-router.post('/:id/image', authMiddleware(['Organizer']), uploadImage);
+// Allow Organizer and Attendee to create events
+router.post('/', authMiddleware(['Organizer', 'Attendee']), createEvent);
 
 module.exports = router;
